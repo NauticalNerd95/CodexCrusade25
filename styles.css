@@ -1,0 +1,83 @@
+@font-face {
+    font-family: 'pixelated';
+    src: url('fonts/mini_pixel-7.ttf') format('opentype');
+}
+
+body {
+    background-image: url('images/background.jpg'); /* Ensure this path is correct */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    text-align: center;
+    padding: 50px;
+    margin: 0; /* Ensure no margin */
+    transition: opacity 1s ease-in-out; /* Adjust duration as needed */
+}
+
+
+body.fade-out { opacity: 0;}
+
+.typewriter h1 {
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 30px;
+    animation: typing 8s steps(40, end); /* Typing animation */
+    font-family: 'Courier New', monospace;
+    color: #FFD700; /* Golden-yellow color */
+}
+
+.typewriter p {
+    display: block;
+    margin: 0 auto;
+    max-width: 800px;
+    text-align: center;
+    font-size: 27px;
+    line-height: 1.6;
+    animation: typing 4s steps(40, end);
+    font-family: 'pixelated'; /* Apply the new font */
+    color: whitesmoke; /* Golden-yellow color */
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-family: 'pixelated', sans-serif;
+    font-size: 28px;
+    cursor: pointer;
+    background-color: #FFD700;
+    border: none;
+    border-radius: 5px;
+    color: #333;
+    transition: opacity 2s ease-in-out; /* Add this line for slow transition */
+    opacity: 0; /* Add this line to start hidden */
+}
+
+.centered-heading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#codexCrusade {
+    font-size: 3em;
+    color: #FFD700; /* Golden-yellow color */
+    font-family: 'pixelated', Arial, sans-serif; /* Apply the retro font */
+}
+
+.background-image {
+    background-image: url('images/bg.jpg'); /* Ensure this path is correct */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+

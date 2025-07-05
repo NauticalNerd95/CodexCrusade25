@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="homestyles.css"> <!-- Link to external CSS file -->
+</head>
+<body>
+    <div class="background-image"></div>
+    <div class="lives-container"> <!-- New container for the hearts --> 
+        <span class="heart">❤</span> <span class="heart">❤</span> <span class="heart">❤</span> <span class="heart">❤</span> <span class="heart">❤</span> </div>
+    <div class="centered-heading typewriter"> 
+        <h1 id="codexCrusade">CodexCrusade25</h1>
+    </div>
+    <div class="paragraph">
+        <p id="typewriter-paragraph">Welcome to CodexCrusade25! In a shattered world teetering on the edge of despair, three brave survivors embark on an epic quest to reclaim hope. Navigate perilous puzzles, answer critical questions, and master coding challenges to rebuild society from the ashes. Will you rise to the challenge and guide them to salvation? The fate of humanity lies in your hands. Begin your journey now! 🚀
+        </p>
+    </div>
+
+    <div class="table-container"> 
+         <table> 
+            <tr>
+                <th>Stage</th>
+                <th>Topic</th>
+            <th>Questions</th>
+            <th>Time Duration</th>
+            <th>Points</th>
+        </tr> 
+            <tr>
+                <td>Calavera</td>
+                <td>Aptitude</td>
+                <td>10</td>
+                <td>00:20:00</td>
+                <td>20</td>
+            </tr> 
+                <tr><td>Hades</td>
+                    <td>Math</td>
+                    <td>10</td>
+                    <td>00:20:00</td>
+                    <td>20</td>
+                </tr> 
+                <tr><td>Ragnarok</td>
+                    <td>Programming</td>
+                    <td>4</td>
+                    <td>00:30:00</td>
+                <td>40</td></tr>
+                 </table> 
+                </div>
+
+                <button id="nextButton" onclick="openNextPage()">PROCEED</button> <!-- Initially hidden button -->    
+                <button id="nextButton" onclick="openGuide()">Help Book</button> <!-- Initially hidden button -->    
+
+              <!--  <button id="beginButton" onclick="location.href='calavera.html'" style="visibility: hidden;">March Ahead</button> -->
+    <script src="homescript.js"></script> <!-- Link to external JavaScript file -->
+</body>
+</html>
