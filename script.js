@@ -59,5 +59,5 @@ function navigateWithFade(url) {
 
 // Use this function to navigate instead of direct navigation
 document.getElementById('nextButton').addEventListener('click', () => {
-    navigateWithFade('calavera.html');
+    navigateWithFade('home.html');
 });
