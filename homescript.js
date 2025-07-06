@@ -14,8 +14,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
 });
 
 function openNextPage() {
-    window.location.href = '../pages/calavera.html'; // Replace 'nextPage.html' with the path to your new HTML document
+    window.location.href = 'calavera.html'; // Replace 'nextPage.html' with the path to your new HTML document
 }
 function openGuide() {
-    window.location.href = '../pages/GUIDEE.html'; // Replace 'nextPage.html' with the path to your new HTML document
+    window.location.href = 'GUIDEE.html'; // Replace 'nextPage.html' with the path to your new HTML document
 }

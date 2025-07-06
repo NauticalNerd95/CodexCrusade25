@@ -3,9 +3,9 @@ document.addEventListener('DOMContentLoaded', (event) => {
     let time;
 
     // Set the initial time based on the current page
-    if (window.location.pathname.includes('/pages/calavera.html') || window.location.pathname.includes('/pages/hades.html')) {
+    if (window.location.pathname.includes('calavera.html') || window.location.pathname.includes('hades.html')) {
         time = 1 * 10; // 20 minutes for Calavera and Hades
-    } else if (window.location.pathname.includes('/pages/ragnarok.html')) {
+    } else if (window.location.pathname.includes('ragnarok.html')) {
         time = 30 * 60; // 40 minutes for Ragnarok
     }
 
@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
             alertBox.appendChild(alertMessage);
 
             // Check if it's the Ragnarok page
-            if (window.location.pathname.includes('../pages/ragnarok.html')) {
+            if (window.location.pathname.includes('ragnarok.html')) {
                 alertMessage.textContent = "Time's up! Thank you for participating :)";
             } else {
                 alertMessage.textContent = "Time's up!⏰";
@@ -70,9 +70,9 @@ document.addEventListener('DOMContentLoaded', (event) => {
                 downloadButton.style.marginBottom = '10px';
 
 
-                if (window.location.pathname.includes('pages/calavera.html')) 
+                if (window.location.pathname.includes('calavera.html')) 
                     { downloadButton.onclick = cal_storeAnswers; } 
-                else if (window.location.pathname.includes('/pages/hades.html')) 
+                else if (window.location.pathname.includes('hades.html')) 
                     { downloadButton.onclick = hades_storeAnswers;}
 
 
@@ -159,11 +159,11 @@ function hades_storeAnswers() {
 }
 
 function navigateToHades() {
-    window.location.href = '../pages/hades.html';
+    window.location.href = 'hades.html';
 }
 
 function navigateToRagnarok() {
-    window.location.href = '../pages/ragnarok.html';
+    window.location.href = 'ragnarok.html';
 }
 function copyQuestionText(questionId) {
     const questionElement = document.getElementById(questionId); 
@@ -181,12 +181,12 @@ function redirectToNextPage() {
     const currentPage = window.location.pathname;
     let nextPage = '';
 
-    if (currentPage.includes('pages/calavera.html')) {
-        nextPage = '../pages/hades.html';
-    } else if (currentPage.includes('pages/hades.html')) {
-        nextPage = '../pages/ragnarok.html';
-    } else if (currentPage.includes('pages/ragnarok.html')) {
-        nextPage = '../pages/calavera.html';
+    if (currentPage.includes('calavera.html')) {
+        nextPage = 'hades.html';
+    } else if (currentPage.includes('hades.html')) {
+        nextPage = 'ragnarok.html';
+    } else if (currentPage.includes('ragnarok.html')) {
+        nextPage = 'calavera.html';
     }
 
     window.location.href = nextPage;
