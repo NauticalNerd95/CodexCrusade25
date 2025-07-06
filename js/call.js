@@ -3,9 +3,9 @@ document.addEventListener('DOMContentLoaded', (event) => {
     let time;
 
     // Set the initial time based on the current page
-    if (window.location.pathname.includes('calavera.html') || window.location.pathname.includes('hades.html')) {
-        time = 20 * 60; // 20 minutes for Calavera and Hades
-    } else if (window.location.pathname.includes('ragnarok.html')) {
+    if (window.location.pathname.includes('/pages/calavera.html') || window.location.pathname.includes('/pages/hades.html')) {
+        time = 1 * 10; // 20 minutes for Calavera and Hades
+    } else if (window.location.pathname.includes('/pages/ragnarok.html')) {
         time = 30 * 60; // 40 minutes for Ragnarok
     }
 
@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
             alertBox.appendChild(alertMessage);
 
             // Check if it's the Ragnarok page
-            if (window.location.pathname.includes('ragnarok.html')) {
+            if (window.location.pathname.includes('../pages/ragnarok.html')) {
                 alertMessage.textContent = "Time's up! Thank you for participating :)";
             } else {
                 alertMessage.textContent = "Time's up!⏰";
@@ -70,9 +70,9 @@ document.addEventListener('DOMContentLoaded', (event) => {
                 downloadButton.style.marginBottom = '10px';
 
 
-                if (window.location.pathname.includes('calavera.html')) 
+                if (window.location.pathname.includes('pages/calavera.html')) 
                     { downloadButton.onclick = cal_storeAnswers; } 
-                else if (window.location.pathname.includes('hades.html')) 
+                else if (window.location.pathname.includes('/pages/hades.html')) 
                     { downloadButton.onclick = hades_storeAnswers;}
 
 
@@ -91,7 +91,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
                 const submitButton = document.createElement('button');
                 submitButton.textContent = 'Next Event';
                 submitButton.onclick = () => {
-                    if (codeInput.value === '23477') {
+                    if (codeInput.value === '64925') {
                         redirectToNextPage();
                     } else {
                         alert('Incorrect code. Please try again.');
@@ -159,11 +159,11 @@ function hades_storeAnswers() {
 }
 
 function navigateToHades() {
-    window.location.href = 'hades.html';
+    window.location.href = '../pages/hades.html';
 }
 
 function navigateToRagnarok() {
-    window.location.href = 'ragnarok.html';
+    window.location.href = '../pages/ragnarok.html';
 }
 function copyQuestionText(questionId) {
     const questionElement = document.getElementById(questionId); 
@@ -181,12 +181,12 @@ function redirectToNextPage() {
     const currentPage = window.location.pathname;
     let nextPage = '';
 
-    if (currentPage.includes('calavera.html')) {
-        nextPage = 'hades.html';
-    } else if (currentPage.includes('hades.html')) {
-        nextPage = 'ragnarok.html';
-    } else if (currentPage.includes('ragnarok.html')) {
-        nextPage = 'calavera.html';
+    if (currentPage.includes('pages/calavera.html')) {
+        nextPage = '../pages/hades.html';
+    } else if (currentPage.includes('pages/hades.html')) {
+        nextPage = '../pages/ragnarok.html';
+    } else if (currentPage.includes('pages/ragnarok.html')) {
+        nextPage = '../pages/calavera.html';
     }
 
     window.location.href = nextPage;
@@ -202,3 +202,46 @@ function navigateToGuide() {
 
 
 
+
+
+
+
+//---------------------------------------------------------------
+// --- Add this new function ---
+function displayThankYouMessage() {
+    // Hide all elements with class 'question-container'
+    document.querySelectorAll('.question-container').forEach(container => {
+        container.style.display = 'none';
+    });
+
+    // Hide the button itself
+    const finishButton = document.getElementById('finishQuizButton');
+    if (finishButton) {
+        finishButton.style.display = 'none';
+    }
+    
+    // Hide the paragraph with class 'ragna_paragraph'
+    const ragnaParagraph = document.querySelector('.ragna_paragraph');
+    if (ragnaParagraph) {
+        ragnaParagraph.style.display = 'none';
+    }
+
+    // Hide and stop the timer
+    const timerElement = document.getElementById('timer');
+    if (timerElement) {
+        // IMPORTANT: Ensure 'timerInterval' is declared outside DOMContentLoaded or globally
+        // e.g., at the very top of your call.js file: `let timerInterval;`
+        // Then, inside DOMContentLoaded: `timerInterval = setInterval(updateTimer, 1000);`
+        if (typeof timerInterval !== 'undefined') { // Check if it's defined
+            clearInterval(timerInterval);
+        }
+        timerElement.style.display = 'none';
+    }
+
+    // Display the thank you message
+    const thankYouContainer = document.getElementById('thankYouMessageContainer');
+    if (thankYouContainer) {
+        thankYouContainer.innerHTML = 'Well done Survivor, you made it out alive!';
+        thankYouContainer.style.display = 'block';
+    }
+}

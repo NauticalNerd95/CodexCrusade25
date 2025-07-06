@@ -1,11 +1,11 @@
 @font-face {
     font-family: 'pixelated';
-    src: url('fonts/mini_pixel-7.ttf') format('opentype');
+    src: url('../fonts/mini_pixel-7.ttf') format('opentype');
 }
 
 @font-face {
     font-family: 'pixel';
-    src: url('fonts/Chars.otf') format('opentype');
+    src: url('../fonts/Chars.otf') format('opentype');
 }
 
 
@@ -24,7 +24,7 @@ body {
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-image: url('images/newfire.jpeg'); /* Ensure this path is correct */
+    background-image: url('../images/newfire.jpeg'); /* Ensure this path is correct */
     background-size: cover;
     background-position: center;
     z-index: -1; /* Place the background behind the content */

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calavera Page</title>
-    <link rel="stylesheet" href="cal.css"> <!-- Link to your external CSS file if needed -->
+    <link rel="stylesheet" href="../css/cal.css"> <!-- Link to your external CSS file if needed -->
 </head>
 <body>
     <div class="ragna_background-image"></div>
@@ -59,6 +59,10 @@ Worst day,
 Separately and in total
         </td> <td class="copy-icon" onclick="copyQuestionText('question5')">📋</td> </tr> </table> </div>
         <div class="timerR" id="timer">30:00</div> <!-- New timer div -->
-        <script src="call.js"></script> <!-- Link to external JavaScript file -->
+        <button id="finishQuizButton" onclick="displayThankYouMessage()">Finish the Quiz</button>
+
+    <div id="thankYouMessageContainer" style="display: none; text-align: center; margin-top: 80px; font-size: 6em; color: white; padding: 40px; font-family: 'pixel';">
+        </div>
+        <script src="../js/call.js"></script> <!-- Link to external JavaScript file -->
     </body>
 </html>
