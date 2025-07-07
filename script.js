@@ -17,9 +17,9 @@ document.addEventListener('DOMContentLoaded', (event) => {
         if (i < headingText.length) {
             heading.textContent += headingText.charAt(i);
             i++;
-            setTimeout(typeHeading, 100); // Adjust typing speed here
+            setTimeout(typeHeading, 100); 
         } else {
-            setTimeout(typeParagraph1, 1000); // Start first paragraph animation after a delay
+            setTimeout(typeParagraph1, 1000); 
         }
     }
 
@@ -28,9 +28,9 @@ document.addEventListener('DOMContentLoaded', (event) => {
         if (j < paragraph1Text.length) {
             paragraph1.textContent += paragraph1Text.charAt(j);
             j++;
-            setTimeout(typeParagraph1, 75); // Adjust typing speed here
+            setTimeout(typeParagraph1, 75); 
         } else {
-            setTimeout(typeParagraph2, 1000); // Start second paragraph animation after a delay
+            setTimeout(typeParagraph2, 1000); 
         }
     }
 
@@ -39,25 +39,23 @@ document.addEventListener('DOMContentLoaded', (event) => {
         if (k < paragraph2Text.length) {
             paragraph2.textContent += paragraph2Text.charAt(k);
             k++;
-            setTimeout(typeParagraph2, 75); // Adjust typing speed here
+            setTimeout(typeParagraph2, 75); 
         } else {
-            nextButton.style.display = 'inline-block'; // Show button after second paragraph finishes typing
-            setTimeout(() => { nextButton.style.opacity = 1; }, 100); // Add slow transition
+            nextButton.style.display = 'inline-block'; 
+            setTimeout(() => { nextButton.style.opacity = 1; }, 100); 
         }
     }
 
     typeHeading();
 });
 
-// Add this function to handle the transition
 function navigateWithFade(url) {
     document.body.classList.add('fade-out');
     setTimeout(() => {
         window.location.href = url;
-    }, 1000); // Match the delay to the 3-second transition duration
+    }, 1000); 
 }
 
-// Use this function to navigate instead of direct navigation
 document.getElementById('nextButton').addEventListener('click', () => {
     navigateWithFade('home.html');
 });

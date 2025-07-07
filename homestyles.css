@@ -13,8 +13,8 @@ body {
     font-family: Arial, sans-serif;
     color:darkturquoise;
     text-align: center;
-    margin: 0; /* Ensure no margin */
-    overflow: hidden; /* Prevent scrolling */
+    margin: 0;  
+    overflow: hidden;  
     cursor :pointer;
 }
 
@@ -24,98 +24,98 @@ body {
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-image: url('images/newfire.jpeg'); /* Ensure this path is correct */
+    background-image: url('images/newfire.jpeg');  
     background-size: cover;
     background-position: center;
-    z-index: -1; /* Place the background behind the content */
+    z-index: -1;  
 }
 .lives-container {
     position: absolute;
-    top: 10px; /* Adjust as needed */
-    right: 10px; /* Adjust as needed */
-    z-index: 2; /* Ensure hearts are above background */
+    top: 10px;  
+    right: 10px;  
+    z-index: 2;  
 }
 
 .heart {
-    font-size: 30px; /* Adjust size as needed */
-    color: red; /* Heart color */
-    margin-right: 10px; /* Space between hearts */
+    font-size: 30px;  
+    color: red;  
+    margin-right: 10px;  
 }
 
 .centered-heading {
     position: absolute;
-    top: 7%; /* Adjust this value to move the text higher */
+    top: 7%;  
     left: 30%;
     transform: translate(-75%, -15%);
     text-align: center;
-    z-index: 1; /* Ensure the heading is above the background */
+    z-index: 1;  
 }
 
 #codexCrusade {
     font-size: 88px;
-    color :#FFD700; /* Golden-yellow color */
-    font-family: 'pixelated', Arial, sans-serif; /* Apply the retro font */
-    white-space: nowrap; /* Prevent wrapping */
-    overflow: hidden; /* Hide overflow */
+    color :#FFD700;  
+    font-family: 'pixelated', Arial, sans-serif;  
+    white-space: nowrap;  
+    overflow: hidden;  
     line-height: 0.6;
-    border-right: 0.1em solid; /* Cursor effect */
-    animation: typing 3s steps(22, end), blink-caret 1s step-end infinite; /* Typing effect */
+    border-right: 0.1em solid;  
+    animation: typing 3s steps(22, end), blink-caret 1s step-end infinite;  
 }
 
 .paragraph {
     display: block;
     position: absolute;
-    top: 37%; /* Adjust this value to position the paragraph */
+    top: 37%;  
     left: 60%;
     color :turquoise;
     transform: translate(-50%, -50%);
-    width: 70%; /* Adjust width as needed */
+    width: 70%;  
     text-align: center;
     font-size: 25px;
-    font-family: 'pixelated', Arial, sans-serif; /* Apply the retro font */
-    visibility :hidden; /* Initially hide paragraph */
+    font-family: 'pixelated', Arial, sans-serif;  
+    visibility :hidden;  
 
 }
 
 #typewriter-paragraph {
-    animation: typingParagraph 5s steps(80, end) forwards; /* Typing effect for paragraph */
+    animation: typingParagraph 5s steps(80, end) forwards;  
 }
 
-/* Add this code to your existing CSS file */
+ 
 .table-container {
     position: absolute;
-    top: 67%; /* Adjust this value to position the table */
+    top: 67%;  
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    width: 90%; /* Adjust width as needed */
+    width: 90%;  
 }
 
 table {
     width: 90%;
     border-collapse: collapse;
     color :aqua;
-    border: 3px solid; /* Same color as CODEX CRUSADE */
-    border-radius: 40px; /* Curved corners */
+    border: 3px solid;  
+    border-radius: 40px;  
 }
 
 th, td {
-    border: 2px solid aquamarine; /* Same color as CODEX CRUSADE */
+    border: 2px solid aquamarine;  
     padding: 4px;
     text-align: center;
     font-family: 'pixel';
 }
 
 th {
-    background-color: transparent; /* Darker background for headers */
-    color :#FFD700; /* Same color as CODEX CRUSADE */
+    background-color: transparent;  
+    color :#FFD700;  
     font-size: 23px;
     font-family: 'pixel', Arial, sans-serif;
 }
 
 td {
-    background-color: transparent; /* Darker background for table cells */
-    color :lightcoral; /* Same color as CODEX CRUSADE */
+    background-color: transparent;  
+    color :lightcoral;  
     font-size: 20px;
 }
 
@@ -132,7 +132,7 @@ button {
     border: none;
     border-radius: 5px;
     color: #333;
-    transition: opacity 2s ease-in-out; /* Add this line for slow transition */
+    transition: opacity 2s ease-in-out;  
     cursor :default;
 }
 
@@ -143,7 +143,7 @@ button {
 
 @keyframes blink-caret {
     from, to { border-color: transparent; }
-    50% { border-color: #FFD700; /* Golden-yellow color */ }
+    50% { border-color: #FFD700;   }
 }
 
 @keyframes typingParagraph {

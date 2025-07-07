@@ -4,9 +4,9 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
     // Set the initial time based on the current page
     if (window.location.pathname.includes('calavera.html') || window.location.pathname.includes('hades.html')) {
-        time = 1 * 10; // 20 minutes for Calavera and Hades
+        time = 20 * 60; // 20 minutes for Calavera and Hades
     } else if (window.location.pathname.includes('ragnarok.html')) {
-        time = 30 * 60; // 40 minutes for Ragnarok
+        time = 40 * 60; // 40 minutes for Ragnarok
     }
 
     if (sessionStorage.getItem('remainingTime')){

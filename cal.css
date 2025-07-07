@@ -1,42 +1,42 @@
 
 .centered-content {
-    position: absolute; top: 50%; /* Center vertically */left: 50%; /* Center horizontally */transform: translate(-50%, -50%);text-align: center;z-index: 1; /* Ensure the content is above the background */
+    position: absolute; top: 50%;  left: 50%;  transform: translate(-50%, -50%);text-align: center;z-index: 1;  
 }
 .calavera-image {
-    max-width: 100%; height: auto; border-radius: 15px; /* Optionally, add curved corners to the image */
+    max-width: 100%; height: auto; border-radius: 15px;  
 }
 .cal_heading {  font-size: 63px; color :rgb(5, 19, 7); 
-    font-family: 'pixel', Arial, sans-serif; /* Apply the retro font */ 
+    font-family: 'pixel', Arial, sans-serif;   
     text-align: center;
     z-index: 2;
     margin-top: 20px;
     margin-bottom: 10px;
 
-    /* Ensure the heading is above the background */}
+     }
     .hades_heading {  font-size: 63px; color :#ef914d; 
-        font-family: 'pixel', Arial, sans-serif; /* Apply the retro font */ 
+        font-family: 'pixel', Arial, sans-serif;   
         text-align: center;
         z-index: 2;
         margin-top: 20px;
         margin-bottom: 10px;
     
-        /* Ensure the heading is above the background */}
-/* Ensure the heading is above the background */
+         }
+ 
 .ragna_heading {  font-size: 63px; color :turquoise; 
-    font-family: 'pixel', Arial, sans-serif; /* Apply the retro font */ 
+    font-family: 'pixel', Arial, sans-serif;   
     text-align: center;
     z-index: 2;
     margin-top: 20px;
     margin-bottom: 10px;
 
-    /* Ensure the heading is above the background */}
+     }
 @font-face {font-family: 'pixelated';src: url('fonts/mini_pixel-7.ttf') format('opentype');}
 @font-face { font-family: 'pixel'; src: url('fonts/Chars.otf') format('opentype'); }
 @font-face { font-family: 'pixel2'; src: url('fonts/lagom.otf') format('opentype'); }
 
 .cal_paragraph  
-{ font-size: 23px; /* Adjust size as needed */ 
-    color :rgb(3, 23, 4); /* Text color */ font-family: 'pixel'; /* Font style */ 
+{ font-size: 23px;   
+    color :rgb(3, 23, 4);   font-family: 'pixel';   
     margin: 10px 0;
     margin: 0 auto;
     max-width: 800px;
@@ -45,8 +45,8 @@
     line-height: 1.3;
 }
 .hades_paragraph  
-{ font-size: 18px; /* Adjust size as needed */ 
-    color :antiquewhite; /* Text color */ font-family: 'pixel'; /* Font style */ 
+{ font-size: 18px;   
+    color :antiquewhite;   font-family: 'pixel';   
     margin: 10px 0;
     margin: 0 auto;
     max-width: 800px;
@@ -55,8 +55,8 @@
     line-height: 1.3;
 }
 .ragna_paragraph  
-{ font-size: 18px; /* Adjust size as needed */ 
-    color :antiquewhite; /* Text color */ font-family: 'pixel'; /* Font style */ 
+{ font-size: 18px;   
+    color :antiquewhite;   font-family: 'pixel';   
     margin: 10px 0;
     margin: 0 auto;
     max-width: 800px;
@@ -68,14 +68,14 @@
 
 
 
-.timerH { position: fixed; top: 20px; /* Adjust as needed */ right: 20px; /* Adjust as needed */ font-size: 46px; /* Adjust size as needed */ color:#f9973c; /* Timer color */ font-family: 'pixelated', Arial, sans-serif; /* Apply the retro font */ z-index: 2; /* Ensure the timer is above the background */}
-.timerR { position :fixed; top: 20px; /* Adjust as needed */ right: 5px; /* Adjust as needed */ font-size: 46px; /* Adjust size as needed */ color: #160147; /* Timer color */ font-family: 'pixelated', Arial, sans-serif; /* Apply the retro font */ z-index: 2; /* Ensure the timer is above the background */}
-.timerC { position:fixed; top: 20px; /* Adjust as needed */ right: 20px; /* Adjust as needed */ font-size: 46px; /* Adjust size as needed */ color: #020104; /* Timer color */ font-family: 'pixelated', Arial, sans-serif; /* Apply the retro font */ z-index: 2; /* Ensure the timer is above the background */}
+.timerH { position: fixed; top: 20px;   right: 20px;   font-size: 46px;   color:#f9973c;   font-family: 'pixelated', Arial, sans-serif;   z-index: 2;  }
+.timerR { position :fixed; top: 20px;   right: 5px;   font-size: 46px;   color: #160147;   font-family: 'pixelated', Arial, sans-serif;   z-index: 2;  }
+.timerC { position:fixed; top: 20px;   right: 20px;   font-size: 46px;   color: #020104;   font-family: 'pixelated', Arial, sans-serif;   z-index: 2;  }
 
 
 .mcq-container {
-    margin: 20px auto; /* Center container */
-    width: 80%; /* Adjust width as needed */
+    margin: 20px auto;  
+    width: 80%;  
     padding : 30px;
     border-radius: 15px;
 }
@@ -90,8 +90,8 @@
 }
 
 .mcq-table th {
-    background-color: #333333; /* Darker background for headers */
-    color: #FFD700; /* Same color as CODEX CRUSADE */
+    background-color: #333333;
+    color: #FFD700; 
     padding: 10px;
     text-align: center;
     font-size: 20px;
@@ -102,8 +102,8 @@
 }
 
 .mcq-table td {
-    background-color :#444444; /* Darker background for table cells */
-    color: #FFD700; /* Same color as CODEX CRUSADE */
+    background-color :#444444; 
+    color: #FFD700; 
     padding: 10px;
     display: flex; justify-content: space-between;
     font-family: 'pixelated';
@@ -114,8 +114,8 @@
 /******************************/
 
 .mcq-containerH {
-    margin: 20px auto; /* Center container */
-    width: 80%; /* Adjust width as needed */
+    margin: 20px auto; 
+    width: 80%; 
     padding : 30px;
     border-radius: 15px;
 }
@@ -123,15 +123,15 @@
 .mcq_tableH {
     width: 100%;
     border-collapse: collapse;
-    margin-bottom: 20px; /* Space between tables */
-    border: 4px #f9973c; /* Solid color border */
-    border-radius: 15px; /* Rounded edges */
-    padding: 10px; /* Padding inside the table */
+    margin-bottom: 20px; 
+    border: 4px #f9973c;
+    border-radius: 15px; 
+    padding: 10px;
 }
 
 .mcq_tableH th {
-    background-color: #333333; /* Darker background for headers */
-    color: #f9973c; /* Same color as CODEX CRUSADE */
+    background-color: #333333; 
+    color: #f9973c; 
     padding: 10px;
     text-align: center;
     font-size: 20px;
@@ -142,8 +142,8 @@
 }
 
 .mcq_tableH td {
-    background-color :#444444; /* Darker background for table cells */
-    color: #f9973c; /* Same color as CODEX CRUSADE */
+    background-color :#444444;  
+    color: #f9973c;  
     padding: 10px;
     display: flex; justify-content: space-between;
     font-family: 'pixelated';
@@ -155,9 +155,9 @@
 
 
 button {
-    display: block; /* Center the button */
-    margin: 20px auto; /* Margin for spacing */
-    padding: 10px 20px; /* Padding for size */
+    display: block;  
+    margin: 20px auto;  
+    padding: 10px 20px;  
     font-family: 'pixelated', sans-serif;
     font-size: 28px;
     cursor: pointer;
@@ -168,9 +168,9 @@ button {
 }
 
 .buttonH {
-    display: block; /* Center the button */
-    margin: 20px auto; /* Margin for spacing */
-    padding: 10px 20px; /* Padding for size */
+    display: block;  
+    margin: 20px auto;  
+    padding: 10px 20px;  
     font-family: 'pixelated', sans-serif;
     font-size: 28px;
     cursor: pointer;
@@ -187,12 +187,12 @@ button {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('images/calblack.jpeg'); /* Ensure this path is correct */
+    background-image: url('images/calblack.jpeg');  
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
-    z-index: -1; /* Place the background behind the content */
+    z-index: -1;  
 }
 
 .hades_background-image {
@@ -201,12 +201,12 @@ button {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('images/hades.jpeg'); /* Ensure this path is correct */
+    background-image: url('images/hades.jpeg');  
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
-    z-index: -1; /* Place the background behind the content */
+    z-index: -1;  
 }
 .ragna_background-image {
     position :fixed;
@@ -214,16 +214,16 @@ button {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('images/ragnaf.jpeg'); /* Ensure this path is correct */
+    background-image: url('images/ragnaf.jpeg');  
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
-    z-index: -1; /* Place the background behind the content */
+    z-index: -1;  
 }
 
 
-/* Ensure the body takes the full height of the viewport */
+ 
 body {
     margin:0;
     padding:0;
@@ -231,36 +231,36 @@ body {
     margin: 0;
     padding: 0;
     text-align: center;
-    transition: opacity 2s ease-in-out; /* Adjust duration as needed */
+    transition: opacity 2s ease-in-out;  
 }
 body.fade-out { opacity: 0;}
 
 .content {
     position: relative;
-    z-index: 1; /* Ensure content is above the background */
+    z-index: 1;  
     padding: 50px;
 }
 input[type="checkbox"] {
-    width: 20px; /* Increase the width of the checkbox */
-    height: 20px; /* Increase the height of the checkbox */
-    transform: scale(1.1); /* Scale the checkbox */
-    margin: 10px; /* Adjust margin as needed */
+    width: 20px;  
+    height: 20px;  
+    transform: scale(1.1);  
+    margin: 10px;  
 }
 
 
 .question-container {
-    margin: 10px auto; /* Center container */
-    width: 80%; /* Adjust width as needed */
-    padding: 20px; /* Padding for spacing */
+    margin: 10px auto;  
+    width: 80%;  
+    padding: 20px;  
 }
 
 .question-table {
     width: 100%;
-    border: 4px solid #e83597; /* Solid color border */
-    border-radius: 15px; /* Rounded edges */
-    padding: 10px; /* Padding inside the table */
-    background-color: #02052c; /* Dark background color */
-    color: turquoise; /* Text color */
+    border: 4px solid #e83597;  
+    border-radius: 15px;  
+    padding: 10px;  
+    background-color: #02052c;  
+    color: turquoise;  
 }
 
 .question-table td {
@@ -272,46 +272,46 @@ input[type="checkbox"] {
 }
 
 .question-text {
-    flex-grow: 10; /* Allow question text to take up remaining space */
+    flex-grow: 10;  
 }
 
 .copy-icon {
     cursor: pointer;
-    font-size: 80px; /* Adjust size as needed */
+    font-size: 80px;  
 }
 #cal_codexCrusade {
     font-size: 36px;
-    color :#1b1703; /* Golden-yellow color */
-    font-family: 'pixelated', Arial, sans-serif; /* Apply the retro font */
-    white-space: nowrap; /* Prevent wrapping */
-    overflow: hidden; /* Hide overflow */
+    color :#1b1703;  
+    font-family: 'pixelated', Arial, sans-serif;  
+    white-space: nowrap;  
+    overflow: hidden;  
     line-height: 0.6;
     position: absolute; 
-  top: 3px; /* Adjust as needed */
-  left: 22px; /* Adjust as needed */ 
+  top: 3px;  
+  left: 22px;   
 }
 
 #hades_codexCrusade {
     font-size: 36px;
-    color :#f9973c; /* Golden-yellow color */
-    font-family: 'pixelated', Arial, sans-serif; /* Apply the retro font */
-    white-space: nowrap; /* Prevent wrapping */
-    overflow: hidden; /* Hide overflow */
+    color :#f9973c;  
+    font-family: 'pixelated', Arial, sans-serif;  
+    white-space: nowrap;  
+    overflow: hidden;  
     line-height: 0.6;
     position: absolute; 
-  top: 3px; /* Adjust as needed */
-  left: 22px; /* Adjust as needed */ 
+  top: 3px;  
+  left: 22px;   
 }
 #rag_codexCrusade {
     font-size: 36px;
-    color :turquoise; /* Golden-yellow color */
-    font-family: 'pixelated', Arial, sans-serif; /* Apply the retro font */
-    white-space: nowrap; /* Prevent wrapping */
-    overflow: hidden; /* Hide overflow */
+    color :turquoise;  
+    font-family: 'pixelated', Arial, sans-serif;  
+    white-space: nowrap;  
+    overflow: hidden;  
     line-height: 0.6;
     position: absolute; 
-  top: 3px; /* Adjust as needed */
-  left: 22px; /* Adjust as needed */ 
+  top: 3px;  
+  left: 22px;   
 }
 
 
@@ -333,6 +333,6 @@ input[type="checkbox"] {
 }
 
 .heart.white {
-    color: white; /* Change to white when the timer gets close to zero */
+    color: white;  
 }
 

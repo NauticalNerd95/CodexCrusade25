@@ -4,7 +4,6 @@
 }
 
 body {
-    background-image: url('images/background.jpg'); /* Ensure this path is correct */
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -12,8 +11,8 @@ body {
     color: #fff;
     text-align: center;
     padding: 50px;
-    margin: 0; /* Ensure no margin */
-    transition: opacity 1s ease-in-out; /* Adjust duration as needed */
+    margin: 0; 
+    transition: opacity 1s ease-in-out; 
 }
 
 
@@ -24,9 +23,9 @@ body.fade-out { opacity: 0;}
     white-space: nowrap;
     overflow: hidden;
     font-size: 30px;
-    animation: typing 8s steps(40, end); /* Typing animation */
+    animation: typing 8s steps(40, end); 
     font-family: 'Courier New', monospace;
-    color: #FFD700; /* Golden-yellow color */
+    color: #FFD700; 
 }
 
 .typewriter p {
@@ -37,8 +36,8 @@ body.fade-out { opacity: 0;}
     font-size: 27px;
     line-height: 1.6;
     animation: typing 4s steps(40, end);
-    font-family: 'pixelated'; /* Apply the new font */
-    color: whitesmoke; /* Golden-yellow color */
+    font-family: 'pixelated'; 
+    color: whitesmoke; 
 }
 
 button {
@@ -51,8 +50,8 @@ button {
     border: none;
     border-radius: 5px;
     color: #333;
-    transition: opacity 2s ease-in-out; /* Add this line for slow transition */
-    opacity: 0; /* Add this line to start hidden */
+    transition: opacity 2s ease-in-out;  
+    opacity: 0;  
 }
 
 .centered-heading {
@@ -65,12 +64,12 @@ button {
 
 #codexCrusade {
     font-size: 3em;
-    color: #FFD700; /* Golden-yellow color */
-    font-family: 'pixelated', Arial, sans-serif; /* Apply the retro font */
+    color: #FFD700; 
+    font-family: 'pixelated', Arial, sans-serif;  
 }
 
 .background-image {
-    background-image: url('images/bg.jpg'); /* Ensure this path is correct */
+    background-image: url('images/bg.jpg');  
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
