@@ -4,6 +4,7 @@
 }
 
 body {
+    background-image: url('images/background.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -69,7 +70,7 @@ button {
 }
 
 .background-image {
-    background-image: url('images/background.jpg');  
+    background-image: url('images/bg.jpg');  
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
