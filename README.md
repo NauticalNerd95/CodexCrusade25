@@ -1,9 +1,8 @@
-# CodexCrusade25
-
-## Project Overview
 ![Gameplay Screenshot](images/image_readme.png)
+## Project Overview
+
 CodexCrusade25 is an interactive web-based quiz and challenge game set in a dystopian future (Year 3012, Krasnoarsk, Kiev). Players embark on an epic quest as survivors, navigating perilous puzzles, answering critical questions, and mastering coding challenges to rebuild society. The fate of humanity lies in your hands!
-## ✨ Features
+##  Features
 
 * **Immersive Premise:** An engaging introductory story sets the scene for your survival journey.
 
@@ -51,4 +50,4 @@ To advance from the Calavera stage to Hades, and from Hades to Ragnarok, you wil
 
 ## 🤝 Credits
 
-Developed by NauticalNerd95.
+Developed by NauticalNerd95(Shalom Salve).
