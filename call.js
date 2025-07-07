@@ -118,7 +118,7 @@ function cal_storeAnswers() {
     }
 
     // Store answers in ans.html
-    let answerFile = '<html><body><h1>Neoverse: Calavera Answers</h1><ul>';
+    let answerFile = '<html><body><h1>Calavera Answers</h1><ul>';
     answers.forEach(ans => {
         answerFile += `<li>Ques ${ans.question}: ${ans.answer}</li>`;
     });
@@ -145,7 +145,7 @@ function hades_storeAnswers() {
     }
 
     // Store answers in ans.html
-    let answerFile = '<html><body><h1>Neoverse: Hades Answers</h1><ul>';
+    let answerFile = '<html><body><h1>Hades Answers</h1><ul>';
     answers.forEach(ans => {
         answerFile += `<li>Question ${ans.question}: ${ans.answer}</li>`;
     });
